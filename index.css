@@ -1,0 +1,63 @@
+.intro {
+    text-align: center;
+    font-size: 12px;
+}
+
+.options {
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    margin: 20px;
+    padding: 5px;
+    text-align: left;
+    background-color: beige;
+    line-height: 30px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 10px;
+    margin-left: 15%;
+    opacity: 1;
+    background: #f1f1f1;
+    border: 1px solid grey;
+}
+
+/* Style only works in Firefox */
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: lightskyblue;
+    cursor: pointer;
+}
+
+.slider:hover {
+    opacity: 0.7;
+}
+
+#title {
+    color: rgb(63, 60, 60);
+    font-size: 30px;
+    line-height: 15px;
+}
+
+#instruction {
+    color: rgb(145, 117, 80);
+    line-height: 20px;
+}
+
+#canvas {
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    margin: 20px;
+    border: 1.5px solid #887350;
+}
+
+.selected {
+    stroke: black;
+    stroke-width: 3px;
+    opacity: 100%;
+}

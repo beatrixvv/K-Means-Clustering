@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=index.css>
+    <title>
+        Interactive System Project
+    </title>
+</head>
+  
+<body>
+    <!--  define the introduction of the website -->
+    <div class="intro">
+        <h1 id="title">CSC4130 Project (Beatrix Victoria)</h1>
+        <h2 id="instruction">Click on the points to select it (you can select up to 5 points).
+          <br> Press "x" on the keyboard to cancel all selection. 
+          <br> When at least one point is selected, you can drag in the blank space to move the selected point(s).</h2>
+        <hr>
+    </div>
+
+    <div id="canvas"></div>
+
+    <div class="options">
+        <!-- define number of clusters -->
+        <label for="cluster_num">Number of clusters</label>
+        <input id="cluster_num" type="number" value="6" min="2" max="10" autocomplete="off"/>
+        <br>
+    
+        <!-- define radius size -->
+        <p style="margin: 0" id="radius_val">Radius: <span id="value"></span></p>
+        <input type="range" min="1" max="20" value="7" step = "1" class="slider" id="radius" autocomplete="off">
+        <br>
+
+        <!-- define a drop-down list for the dataset-->
+        <label for="dataset">Select Dataset</label>
+        <select id="dataset" autocomplete="off">
+          <option value="grid">Grid</option>
+          <option value="diamond">Diamond</option>
+          <option value="random">Random</option>
+        </select>
+        <br> 
+
+        <!-- define a drop-down list for the distance function-->
+        <label for="distance">Select Distance Function</label>
+        <select id="distance" autocomplete="off">
+          <option value="euclid">Euclid</option>
+          <option value="manhattan">Manhattan</option>
+        </select>
+    
+    </div>
+</body>
+
+<!-- Load d3.js -->
+<script src="src/d3.v5.js"></script>
+<script src="src/main.js"></script>
+  
+</html>
